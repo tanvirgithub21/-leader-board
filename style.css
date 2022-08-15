@@ -86,7 +86,74 @@ hr {
 /*---------------------------
        Latest Courses
 ------------------------ */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  grid-column-gap: 24px;
+}
 .course-baner img {
   width: 224px;
   height: 104px;
+}
+.course-detail .author {
+  color: #f76868;
+}
+.course-rateing {
+  display: flex;
+}
+.course-rateing img {
+  width: 20px;
+  height: 20px;
+}
+.field {
+  color: #ffc014;
+}
+.course-rateing .empty {
+  color: #aeaeae;
+}
+.course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-duration {
+  display: flex;
+  align-items: center;
+  background-color: #ffe3e4;
+  color: #f76868;
+  padding: 2px 15px;
+  border-radius: 35px;
+}
+.fa-clock {
+  margin-right: 8px;
+}
+.course-duration img {
+  width: 20px;
+  height: 20px;
+}
+.duration-time {
+}
+
+/*-------------------------
+   Media Quaries 
+   -----------------------*/
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .player,
+  .blog {
+    flex-direction: column;
+  }
 }
